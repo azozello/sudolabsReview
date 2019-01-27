@@ -1,0 +1,12 @@
+@import '../../survey-table.scss';
+
+.survey-table-header-item-text {
+  display: inline-block;
+  margin-right: 0.5rem;
+  &:hover {
+    color: #eaeaea;
+  }
+  &.selected {
+    color: #eaeaea;
+  }
+}

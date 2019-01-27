@@ -1,0 +1,24 @@
+@import "../../assets/styles/_colors.scss";
+
+.side-nav {
+  border: 2px solid $side_nav_bg_color;
+  background-color: $side_nav_bg_color;
+  color: $side_nav_text_color;
+  min-height: 800px;
+}
+
+.side-nav-link {
+  text-decoration: none;
+  color: $side_nav_text_color;
+  &:hover {
+    color: #eaeaea;
+    text-decoration: none;
+  }
+  &.side-nav-active {
+    color: #eaeaea;
+    border: {
+      left: 0.2rem solid ;
+    };
+    border-image: linear-gradient(to top, $gradient_bot_color, $gradient_top_color) 25% 65%;
+  }
+}
