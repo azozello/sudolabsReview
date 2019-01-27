@@ -1,0 +1,45 @@
+
+.dots-container {
+  position: relative;
+  &.dots-container-down {
+    animation: drop-down 500ms;
+    animation-fill-mode: forwards;
+    & .first {
+      animation: drop-down-first 500ms;
+      animation-fill-mode: forwards;
+    }
+    & .second {
+      animation: drop-down-first 500ms;
+      animation-delay: 75ms;
+      animation-fill-mode: forwards;
+    }
+    & .third {
+      animation: drop-down-first 500ms;
+      animation-delay: 150ms;
+      animation-fill-mode: forwards;
+    }
+  }
+  &.dots-container-up {
+    animation: go-up 500ms;
+    animation-fill-mode: forwards;
+  }
+  &:hover div {
+    background-color: #eaeaea;
+  }
+}
+
+@keyframes drop-down {
+  from {top: 0}
+  to {top: 3rem}
+}
+
+@keyframes go-up {
+  from {top: 3rem}
+  to {top: 0}
+}
+
+@keyframes drop-down-first {
+    0%   {top: 0;}
+    33%   {top: -2rem;}
+    100% {top: 0;}
+}
